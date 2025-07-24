@@ -1,0 +1,172 @@
+[
+  {
+    "id": "visa-brand-colors",
+    "title": "Visa Brand Color System",
+    "category": "design",
+    "content": "The Visa color palette is built around our iconic brand blue (#1A1F71) and complementary gold (#F7B801). Primary blue should be used for main actions, navigation, and brand elements. Secondary blue (#3B82F6) supports interactive elements like links and hover states. Gold is reserved for highlights, success states, and premium features. Use neutral grays for text hierarchy and backgrounds, ensuring sufficient contrast for accessibility.",
+    "tags": ["color", "branding", "consistency", "palette"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Button", "Card", "Badge", "Alert"],
+    "relatedTokens": ["visa-blue-primary", "visa-blue-secondary", "visa-blue-light", "visa-gold", "visa-gold-dark", "neutral-gray-900", "neutral-gray-500"]
+  },
+  {
+    "id": "semantic-color-usage",
+    "title": "Semantic Color Guidelines",
+    "category": "design",
+    "content": "Use semantic colors consistently to communicate meaning. Green (#10B981) indicates success, completion, and positive states. Orange (#F59E0B) signals warnings, caution, and pending states. Red (#EF4444) represents errors, critical alerts, and destructive actions. Blue variants communicate information and neutral states. Always pair semantic colors with appropriate icons and text for accessibility.",
+    "tags": ["color", "semantic", "feedback", "status"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Alert", "Badge", "Button"],
+    "relatedTokens": ["semantic-success", "semantic-warning", "semantic-error", "visa-blue-secondary"]
+  },
+  {
+    "id": "typography-system",
+    "title": "Typography Scale and Hierarchy",
+    "category": "design",
+    "content": "Use the Visa Sans font family as the primary typeface for all text elements. Establish clear hierarchy with our type scale: 36px for display text, 30px for major headings, 24px for section headings, 20px for sub-headings, 18px for emphasized text, 16px for body text, 14px for secondary text, and 12px for captions. Maintain consistent line heights: 1.25 for headings, 1.5 for body text, and 1.625 for long-form content.",
+    "tags": ["typography", "hierarchy", "readability", "scale"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Input", "Modal", "Alert"],
+    "relatedTokens": ["font-family-primary", "font-size-4xl", "font-size-3xl", "font-size-2xl", "font-size-base", "line-height-normal", "line-height-tight"]
+  },
+  {
+    "id": "spacing-grid-system",
+    "title": "8px Grid System and Spacing",
+    "category": "layout",
+    "content": "Follow the 8px grid system for consistent spacing and alignment. Use spacing tokens in multiples of 4px: 4px for tight spacing, 8px for small gaps, 16px for standard spacing, 24px for section separation, 32px for major layout spacing, and 48px for page-level divisions. This creates visual rhythm and makes layouts feel cohesive. Apply consistent padding within components and margins between elements.",
+    "tags": ["spacing", "layout", "grid", "consistency", "rhythm"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Card", "Button", "Modal", "Input"],
+    "relatedTokens": ["spacing-1", "spacing-2", "spacing-4", "spacing-6", "spacing-8", "spacing-12"]
+  },
+  {
+    "id": "elevation-shadows",
+    "title": "Elevation and Shadow System",
+    "category": "design",
+    "content": "Use elevation strategically to create depth and hierarchy. Apply subtle shadows (elevation-sm) for form elements and small cards, medium shadows (elevation-md) for standard cards and buttons, large shadows (elevation-lg) for prominent elements like modals and popovers, and extra-large shadows (elevation-xl) for maximum emphasis. Avoid overusing elevation - reserve higher levels for truly important content that needs to stand out.",
+    "tags": ["elevation", "shadows", "depth", "hierarchy"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Card", "Modal", "Button"],
+    "relatedTokens": ["elevation-sm", "elevation-md", "elevation-lg", "elevation-xl"]
+  },
+  {
+    "id": "border-radius-system",
+    "title": "Border Radius and Corner Styling",
+    "category": "design",
+    "content": "Apply consistent border radius for modern, approachable design. Use 4px radius for standard components like buttons and inputs, 8px for cards and larger elements, 12px for prominent features, and full radius (9999px) for circular elements like avatars and pills. Subtle rounding (2px) can be used for fine details, while sharp corners (0px) should be reserved for specific design needs or data tables.",
+    "tags": ["border-radius", "corners", "modern", "consistency"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Button", "Card", "Input", "Badge"],
+    "relatedTokens": ["border-radius-sm", "border-radius-md", "border-radius-lg", "border-radius-xl", "border-radius-full"]
+  },
+  {
+    "id": "motion-transitions",
+    "title": "Motion and Animation Guidelines",
+    "category": "interaction",
+    "content": "Use smooth, purposeful animations to enhance user experience. Apply fast transitions (150ms) for hover effects and quick interactions, normal duration (300ms) for standard animations like modal openings, and slow transitions (500ms) for complex state changes. Use the ease-in-out timing function for natural motion, ease-out for exit animations, and ease-in for entrance effects. Keep animations subtle and functional rather than decorative.",
+    "tags": ["motion", "animation", "transitions", "timing", "easing"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Button", "Modal", "Alert"],
+    "relatedTokens": ["transition-fast", "transition-normal", "transition-slow", "easing-ease-in-out", "easing-ease-out", "easing-ease-in"]
+  },
+  {
+    "id": "accessibility-standards",
+    "title": "Accessibility and Inclusive Design",
+    "category": "accessibility",
+    "content": "Design for all users by following WCAG 2.1 AA standards. Ensure minimum color contrast ratios of 4.5:1 for normal text and 3:1 for large text. Provide keyboard navigation for all interactive elements using Tab, Enter, Space, and arrow keys. Include proper ARIA labels, roles, and states for screen readers. Design touch targets of at least 44px for mobile interfaces. Never rely solely on color to convey information - always pair with text or icons.",
+    "tags": ["accessibility", "wcag", "contrast", "keyboard", "screen-reader", "inclusive"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Button", "Input", "Modal", "Alert", "Badge"],
+    "relatedTokens": ["neutral-gray-900", "neutral-gray-500", "visa-blue-primary", "semantic-success", "semantic-error"]
+  },
+  {
+    "id": "button-hierarchy",
+    "title": "Button Usage and Hierarchy",
+    "category": "components",
+    "content": "Establish clear action hierarchy with button variants. Use primary buttons for the main action on a page - limit to one per view. Secondary buttons support important but not primary actions. Outline buttons work for tertiary actions or when multiple actions are needed. Ghost buttons provide minimal emphasis for subtle actions. Destructive buttons should only be used for irreversible actions like delete or cancel, and should be clearly labeled with consequences.",
+    "tags": ["buttons", "interaction", "hierarchy", "actions"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Button"],
+    "relatedTokens": ["visa-blue-primary", "visa-blue-secondary", "semantic-error", "neutral-gray-500"]
+  },
+  {
+    "id": "form-design-patterns",
+    "title": "Form Design and Input Patterns",
+    "category": "components",
+    "content": "Design forms for clarity and ease of use. Always provide clear labels above or beside inputs - never rely solely on placeholder text. Group related fields together and use consistent spacing. Show validation errors immediately after user interaction with specific, helpful messages. Use helper text to provide additional context or requirements. Size inputs appropriately for their expected content and maintain consistent alignment across form elements.",
+    "tags": ["forms", "inputs", "validation", "labels", "usability"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Input", "Button"],
+    "relatedTokens": ["font-size-base", "font-size-sm", "spacing-3", "spacing-4", "semantic-error", "neutral-gray-500"]
+  },
+  {
+    "id": "card-layout-patterns",
+    "title": "Card Design and Layout Patterns",
+    "category": "components",
+    "content": "Use cards to group related information and create scannable layouts. Apply consistent padding within cards and maintain uniform spacing between card elements. Use elevation thoughtfully - higher elevation for more important content. Make cards clickable only when they lead to another view or perform an action, and provide clear visual feedback for interactive states. Consider card width and ensure content doesn't become too wide for comfortable reading.",
+    "tags": ["cards", "layout", "grouping", "hierarchy", "interaction"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Card", "Button"],
+    "relatedTokens": ["spacing-4", "spacing-5", "spacing-6", "elevation-md", "elevation-lg", "border-radius-md"]
+  },
+  {
+    "id": "feedback-messaging",
+    "title": "User Feedback and Messaging",
+    "category": "communication",
+    "content": "Provide clear, timely feedback for user actions. Use success messages for completed actions, warning messages for potential issues, error messages for problems that need attention, and info messages for general updates. Keep messages concise but informative. Place feedback near the relevant content or action. Use appropriate colors and icons to reinforce the message type. Make dismissible alerts for non-critical information.",
+    "tags": ["feedback", "messaging", "alerts", "communication", "status"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Alert", "Badge"],
+    "relatedTokens": ["semantic-success", "semantic-warning", "semantic-error", "visa-blue-secondary"]
+  },
+  {
+    "id": "modal-dialog-patterns",
+    "title": "Modal and Dialog Design Patterns",
+    "category": "components",
+    "content": "Use modals sparingly and only for important interactions that require user focus. Always provide a clear way to close the modal (X button, Escape key, overlay click). Keep modal content focused and avoid nested modals. Size modals appropriately - small for confirmations, medium for forms, large for complex content. Ensure modal content is accessible with proper focus management and keyboard navigation. Use confirmation modals for destructive actions.",
+    "tags": ["modals", "dialogs", "focus", "interaction", "confirmation"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Modal", "Button"],
+    "relatedTokens": ["elevation-xl", "border-radius-lg", "spacing-6", "spacing-8"]
+  },
+  {
+    "id": "responsive-design",
+    "title": "Responsive Design Principles",
+    "category": "layout",
+    "content": "Design for mobile-first, then enhance for larger screens. Use flexible layouts that adapt to different screen sizes. Ensure touch targets are at least 44px on mobile devices. Stack elements vertically on small screens and use horizontal layouts on larger screens. Adjust typography scales for different screen sizes - smaller text on mobile, larger on desktop. Test interactions on actual devices to ensure usability across platforms.",
+    "tags": ["responsive", "mobile", "desktop", "touch", "layout"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Button", "Card", "Input", "Modal"],
+    "relatedTokens": ["font-size-sm", "font-size-base", "font-size-lg", "spacing-4", "spacing-6", "spacing-8"]
+  },
+  {
+    "id": "data-visualization",
+    "title": "Data Display and Visualization",
+    "category": "data",
+    "content": "Present data clearly and consistently. Use tables for structured data with proper headers and alignment. Apply zebra striping for long tables to improve readability. Use badges and status indicators to highlight important information. When displaying financial data, ensure proper formatting and alignment. Use consistent number formatting and currency symbols. Provide sorting and filtering options for large datasets.",
+    "tags": ["data", "tables", "visualization", "formatting", "financial"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Badge", "Card"],
+    "relatedTokens": ["font-family-monospace", "neutral-gray-50", "neutral-gray-200", "font-size-sm", "font-size-base"]
+  },
+  {
+    "id": "loading-states",
+    "title": "Loading States and Progress Indicators",
+    "category": "interaction",
+    "content": "Provide clear feedback during loading states. Use skeleton screens for content that's loading, spinner indicators for quick actions, and progress bars for longer operations with known duration. Disable interactive elements during loading to prevent multiple submissions. Show loading states immediately when actions are triggered. Provide meaningful loading messages when operations take longer than expected.",
+    "tags": ["loading", "progress", "feedback", "states", "skeleton"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Button", "Card"],
+    "relatedTokens": ["neutral-gray-200", "visa-blue-primary", "transition-normal"]
+  },
+  {
+    "id": "error-handling",
+    "title": "Error Handling and Recovery",
+    "category": "communication",
+    "content": "Design helpful error experiences that guide users toward resolution. Use clear, human-friendly error messages that explain what went wrong and how to fix it. Avoid technical jargon and error codes when possible. Provide specific validation messages for form fields. Offer alternative actions when errors occur. Use appropriate visual styling to make errors noticeable but not alarming. Include contact information for complex issues users can't resolve themselves.",
+    "tags": ["errors", "validation", "recovery", "messaging", "support"],
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "relatedComponents": ["Alert", "Input", "Modal"],
+    "relatedTokens": ["semantic-error", "semantic-warning", "font-size-sm", "spacing-2", "spacing-4"]
+  }
+]

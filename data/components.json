@@ -1,0 +1,705 @@
+[
+  {
+    "name": "Button",
+    "description": "Primary button component for user interactions with Visa brand styling",
+    "category": "form",
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "required": false,
+        "default": "primary",
+        "description": "Button style variant (primary, secondary, outline, ghost, destructive)"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "required": false,
+        "default": "medium",
+        "description": "Button size (small, medium, large, xl)"
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Whether the button is disabled"
+      },
+      {
+        "name": "loading",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Whether the button is in loading state"
+      },
+      {
+        "name": "fullWidth",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Whether the button should take full width"
+      },
+      {
+        "name": "icon",
+        "type": "ReactNode",
+        "required": false,
+        "description": "Icon to display in the button"
+      },
+      {
+        "name": "iconPosition",
+        "type": "string",
+        "required": false,
+        "default": "left",
+        "description": "Position of the icon (left, right)"
+      },
+      {
+        "name": "onClick",
+        "type": "function",
+        "required": true,
+        "description": "Click event handler"
+      },
+      {
+        "name": "children",
+        "type": "ReactNode",
+        "required": true,
+        "description": "Button content"
+      }
+    ],
+    "variants": [
+      {
+        "name": "primary",
+        "props": { "variant": "primary" },
+        "description": "Primary action button with Visa blue background and white text"
+      },
+      {
+        "name": "secondary",
+        "props": { "variant": "secondary" },
+        "description": "Secondary action button with light blue background"
+      },
+      {
+        "name": "outline",
+        "props": { "variant": "outline" },
+        "description": "Outline button with Visa blue border for tertiary actions"
+      },
+      {
+        "name": "ghost",
+        "props": { "variant": "ghost" },
+        "description": "Ghost button with no background for minimal actions"
+      },
+      {
+        "name": "destructive",
+        "props": { "variant": "destructive" },
+        "description": "Destructive button with red styling for dangerous actions"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Primary Button",
+        "description": "Standard primary button for main actions",
+        "code": "<Button variant=\"primary\" onClick={handleSubmit}>Submit Payment</Button>",
+        "language": "jsx"
+      },
+      {
+        "title": "Button with Icon",
+        "description": "Button with an icon for enhanced visual communication",
+        "code": "<Button variant=\"primary\" icon={<CreditCardIcon />} onClick={handlePayment}>Pay Now</Button>",
+        "language": "jsx"
+      },
+      {
+        "title": "Loading Button",
+        "description": "Button in loading state during async operations",
+        "code": "<Button variant=\"primary\" loading={isLoading} onClick={handleSubmit}>Processing...</Button>",
+        "language": "jsx"
+      },
+      {
+        "title": "Full Width Button",
+        "description": "Button that spans the full width of its container",
+        "code": "<Button variant=\"primary\" fullWidth onClick={handleContinue}>Continue</Button>",
+        "language": "jsx"
+      }
+    ],
+    "guidelines": [
+      "Use primary buttons for the main action on a page or section",
+      "Limit to one primary button per view to maintain clear hierarchy",
+      "Use secondary buttons for supporting actions that are still important",
+      "Use outline buttons for tertiary actions or when multiple actions are needed",
+      "Use ghost buttons for minimal actions that don't need emphasis",
+      "Use destructive buttons only for irreversible actions like delete or cancel"
+    ],
+    "accessibility": {
+      "ariaLabels": ["button", "submit", "cancel", "delete", "confirm"],
+      "keyboardNavigation": "Tab to focus, Enter or Space to activate",
+      "screenReaderSupport": "Announces button text, state (disabled/loading), and role",
+      "colorContrast": "Meets WCAG AA standards (4.5:1 minimum) for all variants"
+    }
+  },
+  {
+    "name": "Card",
+    "description": "Flexible container component for grouping related content with Visa styling",
+    "category": "layout",
+    "props": [
+      {
+        "name": "elevation",
+        "type": "string",
+        "required": false,
+        "default": "md",
+        "description": "Card elevation level (none, sm, md, lg, xl)"
+      },
+      {
+        "name": "padding",
+        "type": "string",
+        "required": false,
+        "default": "md",
+        "description": "Internal padding (none, sm, md, lg, xl)"
+      },
+      {
+        "name": "radius",
+        "type": "string",
+        "required": false,
+        "default": "md",
+        "description": "Border radius (none, sm, md, lg, xl, full)"
+      },
+      {
+        "name": "clickable",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Whether the card is clickable"
+      },
+      {
+        "name": "variant",
+        "type": "string",
+        "required": false,
+        "default": "default",
+        "description": "Card variant (default, outlined, filled)"
+      },
+      {
+        "name": "onClick",
+        "type": "function",
+        "required": false,
+        "description": "Click event handler for clickable cards"
+      },
+      {
+        "name": "children",
+        "type": "ReactNode",
+        "required": true,
+        "description": "Card content"
+      }
+    ],
+    "variants": [
+      {
+        "name": "default",
+        "props": { "variant": "default", "elevation": "md" },
+        "description": "Standard card with medium elevation and white background"
+      },
+      {
+        "name": "outlined",
+        "props": { "variant": "outlined", "elevation": "none" },
+        "description": "Card with border outline and no shadow"
+      },
+      {
+        "name": "filled",
+        "props": { "variant": "filled", "elevation": "sm" },
+        "description": "Card with light gray background fill"
+      },
+      {
+        "name": "interactive",
+        "props": { "clickable": true, "elevation": "md" },
+        "description": "Interactive card that responds to hover and click"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Basic Card",
+        "description": "Simple card container for content grouping",
+        "code": "<Card><h3>Payment Summary</h3><p>Total: $125.00</p></Card>",
+        "language": "jsx"
+      },
+      {
+        "title": "Interactive Card",
+        "description": "Clickable card for navigation or selection",
+        "code": "<Card clickable onClick={handleCardSelect}><h3>Credit Card</h3><p>**** 1234</p></Card>",
+        "language": "jsx"
+      },
+      {
+        "title": "Outlined Card",
+        "description": "Card with border styling for subtle emphasis",
+        "code": "<Card variant=\"outlined\" padding=\"lg\"><h3>Account Details</h3></Card>",
+        "language": "jsx"
+      }
+    ],
+    "guidelines": [
+      "Use cards to group related information and create visual hierarchy",
+      "Maintain consistent spacing within cards using the padding prop",
+      "Use elevation sparingly - higher elevation for more important content",
+      "Make cards clickable only when they lead to another view or perform an action",
+      "Use outlined variant when you need subtle separation without shadows"
+    ],
+    "accessibility": {
+      "keyboardNavigation": "Tab to focus if clickable, Enter to activate",
+      "screenReaderSupport": "Proper heading structure and content organization",
+      "colorContrast": "Ensure sufficient contrast for all card content and borders"
+    }
+  },
+  {
+    "name": "Input",
+    "description": "Form input component with Visa design system styling and validation",
+    "category": "form",
+    "props": [
+      {
+        "name": "type",
+        "type": "string",
+        "required": false,
+        "default": "text",
+        "description": "Input type (text, email, password, number, tel, url)"
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": false,
+        "description": "Input label text"
+      },
+      {
+        "name": "placeholder",
+        "type": "string",
+        "required": false,
+        "description": "Placeholder text"
+      },
+      {
+        "name": "value",
+        "type": "string",
+        "required": false,
+        "description": "Input value"
+      },
+      {
+        "name": "defaultValue",
+        "type": "string",
+        "required": false,
+        "description": "Default input value"
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Whether the input is disabled"
+      },
+      {
+        "name": "required",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Whether the input is required"
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "required": false,
+        "description": "Error message to display"
+      },
+      {
+        "name": "helperText",
+        "type": "string",
+        "required": false,
+        "description": "Helper text to display below input"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "required": false,
+        "default": "md",
+        "description": "Input size (sm, md, lg)"
+      },
+      {
+        "name": "icon",
+        "type": "ReactNode",
+        "required": false,
+        "description": "Icon to display in the input"
+      },
+      {
+        "name": "iconPosition",
+        "type": "string",
+        "required": false,
+        "default": "left",
+        "description": "Position of the icon (left, right)"
+      },
+      {
+        "name": "onChange",
+        "type": "function",
+        "required": false,
+        "description": "Change event handler"
+      },
+      {
+        "name": "onFocus",
+        "type": "function",
+        "required": false,
+        "description": "Focus event handler"
+      },
+      {
+        "name": "onBlur",
+        "type": "function",
+        "required": false,
+        "description": "Blur event handler"
+      }
+    ],
+    "variants": [
+      {
+        "name": "default",
+        "props": { "size": "md" },
+        "description": "Standard input with medium size and default styling"
+      },
+      {
+        "name": "with-icon",
+        "props": { "icon": "SearchIcon", "iconPosition": "left" },
+        "description": "Input with an icon for enhanced visual context"
+      },
+      {
+        "name": "error-state",
+        "props": { "error": "This field is required" },
+        "description": "Input in error state with validation message"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Basic Input",
+        "description": "Standard text input with label",
+        "code": "<Input label=\"Email Address\" type=\"email\" placeholder=\"Enter your email\" />",
+        "language": "jsx"
+      },
+      {
+        "title": "Input with Icon",
+        "description": "Input with search icon for enhanced UX",
+        "code": "<Input label=\"Search\" icon={<SearchIcon />} placeholder=\"Search transactions...\" />",
+        "language": "jsx"
+      },
+      {
+        "title": "Input with Validation",
+        "description": "Input with error state and validation message",
+        "code": "<Input label=\"Card Number\" error=\"Please enter a valid card number\" value={cardNumber} />",
+        "language": "jsx"
+      },
+      {
+        "title": "Input with Helper Text",
+        "description": "Input with helpful guidance text",
+        "code": "<Input label=\"Password\" type=\"password\" helperText=\"Must be at least 8 characters\" />",
+        "language": "jsx"
+      }
+    ],
+    "guidelines": [
+      "Always provide clear labels for inputs to improve accessibility",
+      "Use placeholder text to provide examples, not as a replacement for labels",
+      "Show validation errors immediately after user interaction",
+      "Use helper text to provide additional context or requirements",
+      "Group related inputs together and use consistent sizing"
+    ],
+    "accessibility": {
+      "ariaLabels": ["textbox", "email", "password", "search"],
+      "keyboardNavigation": "Tab to focus, standard text input navigation",
+      "screenReaderSupport": "Announces label, value, error state, and requirements",
+      "colorContrast": "Meets WCAG AA standards for text and border colors"
+    }
+  },
+  {
+    "name": "Badge",
+    "description": "Small status indicator component for displaying labels, counts, or status",
+    "category": "display",
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "required": false,
+        "default": "default",
+        "description": "Badge variant (default, primary, success, warning, error, info)"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "required": false,
+        "default": "md",
+        "description": "Badge size (sm, md, lg)"
+      },
+      {
+        "name": "rounded",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Whether the badge should be fully rounded (pill shape)"
+      },
+      {
+        "name": "dot",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Whether to show as a dot indicator without text"
+      },
+      {
+        "name": "children",
+        "type": "ReactNode",
+        "required": false,
+        "description": "Badge content (text or number)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "default",
+        "props": { "variant": "default" },
+        "description": "Default gray badge for general use"
+      },
+      {
+        "name": "primary",
+        "props": { "variant": "primary" },
+        "description": "Primary blue badge using Visa brand color"
+      },
+      {
+        "name": "success",
+        "props": { "variant": "success" },
+        "description": "Green badge for success states and positive indicators"
+      },
+      {
+        "name": "warning",
+        "props": { "variant": "warning" },
+        "description": "Orange badge for warnings and attention states"
+      },
+      {
+        "name": "error",
+        "props": { "variant": "error" },
+        "description": "Red badge for errors and critical states"
+      },
+      {
+        "name": "dot",
+        "props": { "dot": true, "variant": "primary" },
+        "description": "Dot indicator for status without text"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Status Badge",
+        "description": "Badge showing transaction status",
+        "code": "<Badge variant=\"success\">Completed</Badge>",
+        "language": "jsx"
+      },
+      {
+        "title": "Count Badge",
+        "description": "Badge displaying a count or number",
+        "code": "<Badge variant=\"primary\" rounded>3</Badge>",
+        "language": "jsx"
+      },
+      {
+        "title": "Dot Indicator",
+        "description": "Simple dot indicator for status",
+        "code": "<Badge dot variant=\"success\" />",
+        "language": "jsx"
+      }
+    ],
+    "guidelines": [
+      "Use badges to indicate status, categories, or counts",
+      "Choose appropriate colors that match the semantic meaning",
+      "Keep badge text short and descriptive",
+      "Use dot badges when space is limited or for simple status indication",
+      "Ensure badges have sufficient contrast against their background"
+    ],
+    "accessibility": {
+      "ariaLabels": ["status", "badge", "indicator"],
+      "keyboardNavigation": "Not focusable by default",
+      "screenReaderSupport": "Announces badge content and semantic meaning",
+      "colorContrast": "Meets WCAG AA standards for all color variants"
+    }
+  },
+  {
+    "name": "Modal",
+    "description": "Overlay dialog component for displaying content above the main interface",
+    "category": "overlay",
+    "props": [
+      {
+        "name": "open",
+        "type": "boolean",
+        "required": true,
+        "description": "Whether the modal is open"
+      },
+      {
+        "name": "onClose",
+        "type": "function",
+        "required": true,
+        "description": "Function called when modal should close"
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": false,
+        "description": "Modal title"
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "required": false,
+        "default": "md",
+        "description": "Modal size (sm, md, lg, xl, full)"
+      },
+      {
+        "name": "closeOnOverlayClick",
+        "type": "boolean",
+        "required": false,
+        "default": true,
+        "description": "Whether clicking overlay closes modal"
+      },
+      {
+        "name": "closeOnEscape",
+        "type": "boolean",
+        "required": false,
+        "default": true,
+        "description": "Whether pressing Escape closes modal"
+      },
+      {
+        "name": "showCloseButton",
+        "type": "boolean",
+        "required": false,
+        "default": true,
+        "description": "Whether to show close button in header"
+      },
+      {
+        "name": "children",
+        "type": "ReactNode",
+        "required": true,
+        "description": "Modal content"
+      }
+    ],
+    "variants": [
+      {
+        "name": "default",
+        "props": { "size": "md" },
+        "description": "Standard modal with medium size"
+      },
+      {
+        "name": "confirmation",
+        "props": { "size": "sm", "closeOnOverlayClick": false },
+        "description": "Small modal for confirmations and alerts"
+      },
+      {
+        "name": "full-screen",
+        "props": { "size": "full" },
+        "description": "Full-screen modal for complex forms or detailed content"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Basic Modal",
+        "description": "Standard modal with title and content",
+        "code": "<Modal open={isOpen} onClose={handleClose} title=\"Payment Details\"><p>Modal content here</p></Modal>",
+        "language": "jsx"
+      },
+      {
+        "title": "Confirmation Modal",
+        "description": "Small modal for user confirmation",
+        "code": "<Modal open={showConfirm} onClose={handleCancel} title=\"Confirm Delete\" size=\"sm\"><p>Are you sure?</p></Modal>",
+        "language": "jsx"
+      }
+    ],
+    "guidelines": [
+      "Use modals sparingly and only for important interactions",
+      "Always provide a clear way to close the modal",
+      "Keep modal content focused and avoid nested modals",
+      "Use appropriate sizing based on content complexity",
+      "Ensure modal content is accessible and keyboard navigable"
+    ],
+    "accessibility": {
+      "ariaLabels": ["dialog", "modal", "alertdialog"],
+      "keyboardNavigation": "Tab to navigate within modal, Escape to close",
+      "screenReaderSupport": "Announces modal opening, title, and manages focus",
+      "colorContrast": "Ensures sufficient contrast for all modal content"
+    }
+  },
+  {
+    "name": "Alert",
+    "description": "Notification component for displaying important messages and feedback",
+    "category": "feedback",
+    "props": [
+      {
+        "name": "variant",
+        "type": "string",
+        "required": false,
+        "default": "info",
+        "description": "Alert variant (info, success, warning, error)"
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": false,
+        "description": "Alert title"
+      },
+      {
+        "name": "dismissible",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Whether the alert can be dismissed"
+      },
+      {
+        "name": "onDismiss",
+        "type": "function",
+        "required": false,
+        "description": "Function called when alert is dismissed"
+      },
+      {
+        "name": "icon",
+        "type": "ReactNode",
+        "required": false,
+        "description": "Custom icon for the alert"
+      },
+      {
+        "name": "children",
+        "type": "ReactNode",
+        "required": true,
+        "description": "Alert content"
+      }
+    ],
+    "variants": [
+      {
+        "name": "info",
+        "props": { "variant": "info" },
+        "description": "Blue alert for informational messages"
+      },
+      {
+        "name": "success",
+        "props": { "variant": "success" },
+        "description": "Green alert for success messages"
+      },
+      {
+        "name": "warning",
+        "props": { "variant": "warning" },
+        "description": "Orange alert for warning messages"
+      },
+      {
+        "name": "error",
+        "props": { "variant": "error" },
+        "description": "Red alert for error messages"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Success Alert",
+        "description": "Alert showing successful operation",
+        "code": "<Alert variant=\"success\" title=\"Payment Successful\">Your payment has been processed.</Alert>",
+        "language": "jsx"
+      },
+      {
+        "title": "Dismissible Alert",
+        "description": "Alert that can be closed by user",
+        "code": "<Alert variant=\"warning\" dismissible onDismiss={handleDismiss}>Please verify your information.</Alert>",
+        "language": "jsx"
+      }
+    ],
+    "guidelines": [
+      "Use appropriate alert variants that match the message severity",
+      "Keep alert messages concise and actionable",
+      "Place alerts near the relevant content or at the top of the page",
+      "Use dismissible alerts for non-critical information",
+      "Provide clear next steps when appropriate"
+    ],
+    "accessibility": {
+      "ariaLabels": ["alert", "status", "alertdialog"],
+      "keyboardNavigation": "Tab to dismiss button if dismissible",
+      "screenReaderSupport": "Announces alert content and severity level",
+      "colorContrast": "Meets WCAG AA standards for all alert variants"
+    }
+  }
+]

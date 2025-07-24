@@ -1,0 +1,515 @@
+[
+  {
+    "name": "visa-blue-primary",
+    "value": "#1A1F71",
+    "category": "color",
+    "description": "Primary Visa brand blue color - the core brand color",
+    "usage": ["primary buttons", "brand elements", "headers", "navigation", "call-to-action"],
+    "deprecated": false,
+    "aliases": ["primary-blue", "brand-blue", "visa-primary"]
+  },
+  {
+    "name": "visa-blue-secondary",
+    "value": "#3B82F6",
+    "category": "color",
+    "description": "Secondary blue for supporting elements and interactions",
+    "usage": ["secondary buttons", "links", "accents", "hover states"],
+    "deprecated": false,
+    "aliases": ["secondary-blue", "interactive-blue"]
+  },
+  {
+    "name": "visa-blue-light",
+    "value": "#E6F2FF",
+    "category": "color",
+    "description": "Light blue for backgrounds and subtle highlights",
+    "usage": ["background tints", "selected states", "info messages"],
+    "deprecated": false,
+    "aliases": ["light-blue", "background-blue"]
+  },
+  {
+    "name": "visa-gold",
+    "value": "#F7B801",
+    "category": "color",
+    "description": "Visa gold accent color for premium and success states",
+    "usage": ["highlights", "success states", "premium features", "rewards", "achievements"],
+    "deprecated": false,
+    "aliases": ["gold", "accent-gold", "premium-gold"]
+  },
+  {
+    "name": "visa-gold-dark",
+    "value": "#D49C00",
+    "category": "color",
+    "description": "Darker gold for hover states and emphasis",
+    "usage": ["gold button hover", "active gold elements", "gold text on light backgrounds"],
+    "deprecated": false,
+    "aliases": ["dark-gold", "gold-hover"]
+  },
+  {
+    "name": "neutral-white",
+    "value": "#FFFFFF",
+    "category": "color",
+    "description": "Pure white for backgrounds and contrast",
+    "usage": ["page backgrounds", "card backgrounds", "button text", "icons on dark backgrounds"],
+    "deprecated": false,
+    "aliases": ["white", "background-white"]
+  },
+  {
+    "name": "neutral-gray-50",
+    "value": "#F9FAFB",
+    "category": "color",
+    "description": "Lightest gray for subtle backgrounds",
+    "usage": ["section backgrounds", "disabled states", "subtle dividers"],
+    "deprecated": false,
+    "aliases": ["gray-lightest", "background-gray"]
+  },
+  {
+    "name": "neutral-gray-200",
+    "value": "#E5E7EB",
+    "category": "color",
+    "description": "Light gray for borders and dividers",
+    "usage": ["borders", "dividers", "input outlines", "card edges"],
+    "deprecated": false,
+    "aliases": ["gray-light", "border-gray"]
+  },
+  {
+    "name": "neutral-gray-500",
+    "value": "#6B7280",
+    "category": "color",
+    "description": "Medium gray for secondary text and icons",
+    "usage": ["secondary text", "placeholder text", "inactive icons", "captions"],
+    "deprecated": false,
+    "aliases": ["gray-medium", "text-secondary"]
+  },
+  {
+    "name": "neutral-gray-900",
+    "value": "#111827",
+    "category": "color",
+    "description": "Dark gray for primary text and high contrast elements",
+    "usage": ["primary text", "headings", "active icons", "high contrast elements"],
+    "deprecated": false,
+    "aliases": ["gray-dark", "text-primary"]
+  },
+  {
+    "name": "semantic-success",
+    "value": "#10B981",
+    "category": "color",
+    "description": "Green for success states and positive feedback",
+    "usage": ["success messages", "completed states", "positive indicators", "checkmarks"],
+    "deprecated": false,
+    "aliases": ["green", "success-green"]
+  },
+  {
+    "name": "semantic-warning",
+    "value": "#F59E0B",
+    "category": "color",
+    "description": "Orange for warning states and caution indicators",
+    "usage": ["warning messages", "caution states", "pending indicators", "attention alerts"],
+    "deprecated": false,
+    "aliases": ["orange", "warning-orange"]
+  },
+  {
+    "name": "semantic-error",
+    "value": "#EF4444",
+    "category": "color",
+    "description": "Red for error states and critical alerts",
+    "usage": ["error messages", "validation errors", "critical alerts", "destructive actions"],
+    "deprecated": false,
+    "aliases": ["red", "error-red"]
+  },
+  {
+    "name": "font-family-primary",
+    "value": "\"Visa Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+    "category": "typography",
+    "description": "Primary font family for all text elements",
+    "usage": ["all text", "headings", "body text", "interface text"],
+    "deprecated": false,
+    "aliases": ["font-primary", "visa-font"]
+  },
+  {
+    "name": "font-family-monospace",
+    "value": "\"SF Mono\", Monaco, \"Cascadia Code\", \"Roboto Mono\", Consolas, monospace",
+    "category": "typography",
+    "description": "Monospace font for code and technical content",
+    "usage": ["code blocks", "technical data", "account numbers", "reference codes"],
+    "deprecated": false,
+    "aliases": ["font-mono", "code-font"]
+  },
+  {
+    "name": "font-size-xs",
+    "value": "12px",
+    "category": "typography",
+    "description": "Extra small font size for captions and fine print",
+    "usage": ["captions", "fine print", "legal text", "metadata"],
+    "deprecated": false,
+    "aliases": ["text-xs"]
+  },
+  {
+    "name": "font-size-sm",
+    "value": "14px",
+    "category": "typography",
+    "description": "Small font size for secondary text",
+    "usage": ["secondary text", "labels", "helper text", "form descriptions"],
+    "deprecated": false,
+    "aliases": ["text-sm"]
+  },
+  {
+    "name": "font-size-base",
+    "value": "16px",
+    "category": "typography",
+    "description": "Base font size for body text and standard interface elements",
+    "usage": ["body text", "default text", "form inputs", "buttons"],
+    "deprecated": false,
+    "aliases": ["text-base", "font-normal"]
+  },
+  {
+    "name": "font-size-lg",
+    "value": "18px",
+    "category": "typography",
+    "description": "Large font size for emphasized text",
+    "usage": ["emphasized text", "large buttons", "important labels"],
+    "deprecated": false,
+    "aliases": ["text-lg"]
+  },
+  {
+    "name": "font-size-xl",
+    "value": "20px",
+    "category": "typography",
+    "description": "Extra large font size for sub-headings",
+    "usage": ["sub-headings", "section titles", "card titles"],
+    "deprecated": false,
+    "aliases": ["text-xl"]
+  },
+  {
+    "name": "font-size-2xl",
+    "value": "24px",
+    "category": "typography",
+    "description": "2X large font size for headings",
+    "usage": ["headings", "modal titles", "section headers"],
+    "deprecated": false,
+    "aliases": ["text-2xl", "heading-2"]
+  },
+  {
+    "name": "font-size-3xl",
+    "value": "30px",
+    "category": "typography",
+    "description": "3X large font size for major headings",
+    "usage": ["major headings", "page titles", "hero text"],
+    "deprecated": false,
+    "aliases": ["text-3xl", "heading-1"]
+  },
+  {
+    "name": "font-size-4xl",
+    "value": "36px",
+    "category": "typography",
+    "description": "4X large font size for display text",
+    "usage": ["display text", "hero titles", "marketing headers"],
+    "deprecated": false,
+    "aliases": ["text-4xl", "display"]
+  },
+  {
+    "name": "font-weight-normal",
+    "value": 400,
+    "category": "typography",
+    "description": "Normal font weight for body text",
+    "usage": ["body text", "default text", "paragraphs"],
+    "deprecated": false,
+    "aliases": ["weight-normal"]
+  },
+  {
+    "name": "font-weight-medium",
+    "value": 500,
+    "category": "typography",
+    "description": "Medium font weight for emphasis",
+    "usage": ["emphasized text", "labels", "button text"],
+    "deprecated": false,
+    "aliases": ["weight-medium"]
+  },
+  {
+    "name": "font-weight-semibold",
+    "value": 600,
+    "category": "typography",
+    "description": "Semi-bold font weight for headings",
+    "usage": ["headings", "section titles", "important text"],
+    "deprecated": false,
+    "aliases": ["weight-semibold"]
+  },
+  {
+    "name": "font-weight-bold",
+    "value": 700,
+    "category": "typography",
+    "description": "Bold font weight for strong emphasis",
+    "usage": ["strong emphasis", "major headings", "call-to-action text"],
+    "deprecated": false,
+    "aliases": ["weight-bold"]
+  },
+  {
+    "name": "line-height-tight",
+    "value": 1.25,
+    "category": "typography",
+    "description": "Tight line height for headings",
+    "usage": ["headings", "titles", "compact text"],
+    "deprecated": false,
+    "aliases": ["leading-tight"]
+  },
+  {
+    "name": "line-height-normal",
+    "value": 1.5,
+    "category": "typography",
+    "description": "Normal line height for body text",
+    "usage": ["body text", "paragraphs", "default text"],
+    "deprecated": false,
+    "aliases": ["leading-normal"]
+  },
+  {
+    "name": "line-height-relaxed",
+    "value": 1.625,
+    "category": "typography",
+    "description": "Relaxed line height for improved readability",
+    "usage": ["long-form text", "articles", "documentation"],
+    "deprecated": false,
+    "aliases": ["leading-relaxed"]
+  },
+  {
+    "name": "spacing-0",
+    "value": "0px",
+    "category": "spacing",
+    "description": "Zero spacing for tight layouts",
+    "usage": ["no spacing", "tight layouts", "reset margins"],
+    "deprecated": false,
+    "aliases": ["space-0"]
+  },
+  {
+    "name": "spacing-1",
+    "value": "4px",
+    "category": "spacing",
+    "description": "Smallest spacing unit for tight spacing",
+    "usage": ["tight spacing", "small gaps", "fine adjustments"],
+    "deprecated": false,
+    "aliases": ["space-1", "spacing-xs"]
+  },
+  {
+    "name": "spacing-2",
+    "value": "8px",
+    "category": "spacing",
+    "description": "Small spacing unit for component padding",
+    "usage": ["component padding", "small margins", "icon spacing"],
+    "deprecated": false,
+    "aliases": ["space-2", "spacing-sm"]
+  },
+  {
+    "name": "spacing-3",
+    "value": "12px",
+    "category": "spacing",
+    "description": "Medium-small spacing for form elements",
+    "usage": ["form element spacing", "button padding", "input padding"],
+    "deprecated": false,
+    "aliases": ["space-3"]
+  },
+  {
+    "name": "spacing-4",
+    "value": "16px",
+    "category": "spacing",
+    "description": "Standard spacing unit for general use",
+    "usage": ["standard margins", "component spacing", "section padding"],
+    "deprecated": false,
+    "aliases": ["space-4", "spacing-md"]
+  },
+  {
+    "name": "spacing-5",
+    "value": "20px",
+    "category": "spacing",
+    "description": "Medium-large spacing for section separation",
+    "usage": ["section spacing", "card padding", "content separation"],
+    "deprecated": false,
+    "aliases": ["space-5"]
+  },
+  {
+    "name": "spacing-6",
+    "value": "24px",
+    "category": "spacing",
+    "description": "Large spacing for major sections",
+    "usage": ["major sections", "page margins", "large component spacing"],
+    "deprecated": false,
+    "aliases": ["space-6", "spacing-lg"]
+  },
+  {
+    "name": "spacing-8",
+    "value": "32px",
+    "category": "spacing",
+    "description": "Extra large spacing for page layout",
+    "usage": ["page sections", "major layout spacing", "hero sections"],
+    "deprecated": false,
+    "aliases": ["space-8", "spacing-xl"]
+  },
+  {
+    "name": "spacing-10",
+    "value": "40px",
+    "category": "spacing",
+    "description": "2X large spacing for major page sections",
+    "usage": ["major page sections", "content blocks", "layout spacing"],
+    "deprecated": false,
+    "aliases": ["space-10", "spacing-2xl"]
+  },
+  {
+    "name": "spacing-12",
+    "value": "48px",
+    "category": "spacing",
+    "description": "3X large spacing for page-level layout",
+    "usage": ["page-level spacing", "major content blocks", "section dividers"],
+    "deprecated": false,
+    "aliases": ["space-12", "spacing-3xl"]
+  },
+  {
+    "name": "border-radius-none",
+    "value": "0px",
+    "category": "spacing",
+    "description": "No border radius for sharp corners",
+    "usage": ["sharp corners", "rectangular elements", "reset radius"],
+    "deprecated": false,
+    "aliases": ["rounded-none"]
+  },
+  {
+    "name": "border-radius-sm",
+    "value": "2px",
+    "category": "spacing",
+    "description": "Small border radius for subtle rounding",
+    "usage": ["subtle rounding", "small elements", "fine details"],
+    "deprecated": false,
+    "aliases": ["rounded-sm"]
+  },
+  {
+    "name": "border-radius-md",
+    "value": "4px",
+    "category": "spacing",
+    "description": "Medium border radius for standard components",
+    "usage": ["buttons", "inputs", "cards", "standard components"],
+    "deprecated": false,
+    "aliases": ["rounded-md", "rounded"]
+  },
+  {
+    "name": "border-radius-lg",
+    "value": "8px",
+    "category": "spacing",
+    "description": "Large border radius for prominent elements",
+    "usage": ["prominent cards", "large buttons", "modal corners"],
+    "deprecated": false,
+    "aliases": ["rounded-lg"]
+  },
+  {
+    "name": "border-radius-xl",
+    "value": "12px",
+    "category": "spacing",
+    "description": "Extra large border radius for modern styling",
+    "usage": ["modern cards", "hero sections", "feature blocks"],
+    "deprecated": false,
+    "aliases": ["rounded-xl"]
+  },
+  {
+    "name": "border-radius-full",
+    "value": "9999px",
+    "category": "spacing",
+    "description": "Full border radius for circular elements",
+    "usage": ["circular buttons", "avatars", "badges", "pills"],
+    "deprecated": false,
+    "aliases": ["rounded-full"]
+  },
+  {
+    "name": "elevation-none",
+    "value": "none",
+    "category": "elevation",
+    "description": "No shadow for flat design",
+    "usage": ["flat design", "no elevation", "minimal styling"],
+    "deprecated": false,
+    "aliases": ["shadow-none"]
+  },
+  {
+    "name": "elevation-sm",
+    "value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+    "category": "elevation",
+    "description": "Small shadow for subtle elevation",
+    "usage": ["subtle elevation", "small cards", "form elements"],
+    "deprecated": false,
+    "aliases": ["shadow-sm"]
+  },
+  {
+    "name": "elevation-md",
+    "value": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    "category": "elevation",
+    "description": "Medium shadow for standard elevation",
+    "usage": ["cards", "buttons", "standard elevation", "dropdowns"],
+    "deprecated": false,
+    "aliases": ["shadow-md", "elevation-low"]
+  },
+  {
+    "name": "elevation-lg",
+    "value": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+    "category": "elevation",
+    "description": "Large shadow for prominent elevation",
+    "usage": ["prominent cards", "modals", "overlays", "floating elements"],
+    "deprecated": false,
+    "aliases": ["shadow-lg"]
+  },
+  {
+    "name": "elevation-xl",
+    "value": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+    "category": "elevation",
+    "description": "Extra large shadow for maximum elevation",
+    "usage": ["modals", "popovers", "tooltips", "maximum elevation"],
+    "deprecated": false,
+    "aliases": ["shadow-xl"]
+  },
+  {
+    "name": "transition-fast",
+    "value": "150ms",
+    "category": "motion",
+    "description": "Fast transition duration for quick interactions",
+    "usage": ["hover effects", "button states", "quick animations"],
+    "deprecated": false,
+    "aliases": ["duration-fast"]
+  },
+  {
+    "name": "transition-normal",
+    "value": "300ms",
+    "category": "motion",
+    "description": "Normal transition duration for standard animations",
+    "usage": ["standard animations", "modal transitions", "page transitions"],
+    "deprecated": false,
+    "aliases": ["duration-normal"]
+  },
+  {
+    "name": "transition-slow",
+    "value": "500ms",
+    "category": "motion",
+    "description": "Slow transition duration for complex animations",
+    "usage": ["complex animations", "loading states", "reveal animations"],
+    "deprecated": false,
+    "aliases": ["duration-slow"]
+  },
+  {
+    "name": "easing-ease-in-out",
+    "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "category": "motion",
+    "description": "Smooth ease-in-out timing function",
+    "usage": ["smooth animations", "natural motion", "standard easing"],
+    "deprecated": false,
+    "aliases": ["ease-smooth"]
+  },
+  {
+    "name": "easing-ease-out",
+    "value": "cubic-bezier(0, 0, 0.2, 1)",
+    "category": "motion",
+    "description": "Ease-out timing function for exit animations",
+    "usage": ["exit animations", "fade out", "slide out"],
+    "deprecated": false,
+    "aliases": ["ease-out"]
+  },
+  {
+    "name": "easing-ease-in",
+    "value": "cubic-bezier(0.4, 0, 1, 1)",
+    "category": "motion",
+    "description": "Ease-in timing function for entrance animations",
+    "usage": ["entrance animations", "fade in", "slide in"],
+    "deprecated": false,
+    "aliases": ["ease-in"]
+  }
+]
