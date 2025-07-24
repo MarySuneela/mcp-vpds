@@ -1,0 +1,61 @@
+{
+  "name": "visa-design-system-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Visa Product Design System",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "visa-design-system-mcp": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "cli": "tsx src/cli.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:performance": "jest --testNamePattern='Performance'",
+    "test:edge-cases": "jest --testNamePattern='Edge Cases'",
+    "test:mcp-compliance": "jest --testNamePattern='MCP Protocol Compliance'",
+    "test:unit": "jest --testPathIgnorePatterns='integration|performance|edge-cases|mcp-protocol-compliance'",
+    "test:integration": "jest --testNamePattern='integration'",
+    "test:ci": "jest --coverage --ci --watchAll=false --maxWorkers=2",
+    "test:memory-leaks": "jest --testNamePattern='Memory' --detectOpenHandles --forceExit",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "clean": "rm -rf dist",
+    "validate-data": "node validate-sample-data.js",
+    "prestart": "npm run build",
+    "postinstall": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "design-system",
+    "visa",
+    "ai",
+    "tools"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "ajv": "^8.12.0",
+    "ajv-formats": "^3.0.1",
+    "chokidar": "^3.5.3",
+    "commander": "^14.0.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.0",
+    "@types/jest": "^29.5.8",
+    "@types/node": "^20.19.9",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.0"
+  }
+}

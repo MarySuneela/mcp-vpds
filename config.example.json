@@ -1,0 +1,28 @@
+{
+  "server": {
+    "name": "visa-design-system-mcp",
+    "version": "1.0.0",
+    "port": 3000,
+    "enableHttp": false,
+    "logLevel": "info",
+    "enableRequestLogging": false
+  },
+  "data": {
+    "dataPath": "./data",
+    "enableFileWatching": true,
+    "cacheTimeout": 300000,
+    "maxCacheSize": 100,
+    "enableValidation": true
+  },
+  "security": {
+    "enableAuth": false,
+    "allowedOrigins": ["*"],
+    "rateLimitRpm": 1000
+  },
+  "performance": {
+    "maxConcurrentRequests": 100,
+    "requestTimeout": 30000,
+    "enableCompression": true,
+    "memoryWarningThreshold": 512
+  }
+}
