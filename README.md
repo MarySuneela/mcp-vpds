@@ -2,6 +2,10 @@
 
 A Model Context Protocol (MCP) server that provides AI tools with access to Visa's Product Design System resources, including design tokens, component specifications, and usage guidelines.
 
+<a href="https://glama.ai/mcp/servers/@MarySuneela/mcp-vpds">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@MarySuneela/mcp-vpds/badge" alt="Visa Design System Server MCP server" />
+</a>
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -165,7 +169,7 @@ For detailed API documentation, see [API.md](./API.md).
 
 Add the following to your Claude Desktop configuration file:
 
-**macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+**macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`  
 **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
 
 ```json
